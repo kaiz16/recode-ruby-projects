@@ -16,6 +16,8 @@ roman_numerals = [
     [1000, "M"],
 ]
 =end
+print "Enter a number to convert to Roman Numerals : "
+num = gets.chomp.to_i
 
 def roman_numerals(num)
 numerals = [1,4,5,9,10,40,50,90,100,400,500,900,1000]
@@ -40,4 +42,4 @@ separate_nums = []
     return separate_nums.join("")
 end
 
-p roman_numerals(2678)
+p roman_numerals(num)
