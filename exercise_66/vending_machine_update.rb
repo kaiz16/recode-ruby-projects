@@ -1,6 +1,5 @@
 def return_coins(coins, val, c = 0, res = [])
-   coins = coins.sort.reverse
-   return res.last.sort.reverse if c > val
+   return res.last if c > val
    res << coins
    res[c] = [] if c == 0
     if c != 0
